@@ -1,0 +1,148 @@
+<main id="container">
+  <!--   Nav bar to collapse/expand -->
+  <nav :class="navBar">
+    <div class="logo">
+    </div>
+    <ul>
+      <li><a href="hack1.html">BACK</a></li>
+      
+    </ul>
+    <i class="material-icons menu-icon">menu</i>
+  </nav>
+  <!--   Dummy article for context -->
+  <div class="wrapper">
+    <article>
+      <h2>C.  Fighting Disabilities</h2>
+      <p><b>C01.</b>Incorporate a feature in the existing fit bit software for sweat detector which is predicting massive cardiac attack.</p>
+     
+      <p><b>C02</b>. Design software which predicts how many units of blood needed for an accident victim suffering from severe blood loss.
+
+</p>
+      <p><b>C03</b>Design software and incorporate this feature in a lady’s wrist watch/bangle which predicts and alerts for their periods/irregular periods/heavy blood loss pertaining to carry the number of sanitary napkins.</p>
+    </article>
+    <article>
+     
+      <p><b>C04</b>Design software for diabetics which are predicting the rate of cardiac arrest/kidney malfunctioning/eye sight issues.
+
+</p>
+     
+      <p><b>C05.</b>Design software which depicts the percentage of toxic wastes cleaned in the human legs using fish therapy. Software need to display the percentage amount of toxic wastes before and after therapy.
+
+</p>
+    </article>
+   
+  </div>
+</main>
+<style type="text/css">
+	@import url("https://fonts.googleapis.com/css?family=Droid+Serif:700|Lato");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+article {
+  margin: 2em 0;
+  max-width: 960px;
+  width: 80%;
+}
+article h2 {
+  font-family: 'Droid Serif', serif;
+  font-size: 2.5em;
+  line-height: 1.5em;
+}
+article p {
+  initial-letter: 2;
+  line-height: 2em;
+  margin-top: 1em;
+  text-indent: 2em;
+}
+
+body {
+  background-color: snow;
+  color: #2c3e50;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.5em;
+}
+
+nav {
+  align-items: center;
+  background-color:  #ff6600;
+  border-bottom: 2px solid #9E579D;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 73px;
+}
+
+ul {
+  color: #9E579D;
+  display: flex;
+  font-size: .8em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+ul li {
+  cursor: pointer;
+  margin-right: 2em;
+  transition: color .5s ease;
+}
+ul li:hover {
+  color: #574B90;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.img {
+  background: url(https://upload.wikimedia.org/wikipedia/en/2/26/Rajalakshmi_Institute_Of_Technology_%28RIT%29_Logo.jpg);
+  margin-top: 1em;
+  width: 483px;
+  height: 300px;
+}
+
+.logo {
+  background: url(http://www.ritchennai.org/image/logo.png);
+  background-size: contain;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-left: 2em;
+  transition: background .5s ease;
+  width: 70px;
+  height: 70px;
+}
+.logo:hover {
+  background: #9E579D;
+}
+
+.menu-icon {
+  color: #9E579D;
+  cursor: pointer;
+  display: none;
+  font-size: 3em;
+  margin-right: .75em;
+  transition: color .5s ease;
+}
+.menu-icon:hover {
+  color: #574B90;
+}
+
+.float-left {
+  float: left;
+  margin-right: 1em;
+}
+
+.float-right {
+  float: right;
+  margin-left: 1em;
+}
+
+.wrapper {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 93.75px;
+}
+
+
+
+</style>

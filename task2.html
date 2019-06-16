@@ -1,0 +1,136 @@
+<main id="container">
+  <!--   Nav bar to collapse/expand -->
+  <nav :class="navBar">
+    <div class="logo">
+    </div>
+    <ul>
+      <li><a href="hack1.html">BACK</a></li>
+      
+    </ul>
+    <i class="material-icons menu-icon">menu</i>
+  </nav>
+  <!--   Dummy article for context -->
+  <div class="wrapper">
+    <article>
+      <h2><b>B. Revamping Marketing and Advertising Strategy</b></h2>
+      <b>B01. Analysis of responses for a particular product that is to be launched using     social media</b>
+      <p>Description: Design a tool that can listen to social media comments (Twitter, Facebook, YouTube etc.) and intelligently associate feedback i.e. Giving public 's views on the product/software, identifying the product' s competitor and analyzing them etc. specific program/software which is going to be launched soon by a company at a specific time.</p>
+      <p><b>B02.</b>Create a digital marketing network for sale of agricultural commodities for the benefit of agriculturist and end user.</p>
+      <p><b>B03.</b>Digital marketing strategies for effective marketing of Fast-Moving Consumer Goods (FMCG).</p>
+      
+    </article>
+  </div>
+</main>
+<style type="text/css">
+	@import url("https://fonts.googleapis.com/css?family=Droid+Serif:700|Lato");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+article {
+  margin: 2em 0;
+  max-width: 960px;
+  width: 80%;
+}
+article h2 {
+  font-family: 'Droid Serif', serif;
+  font-size: 2.5em;
+  line-height: 1.5em;
+}
+article p {
+  initial-letter: 2;
+  line-height: 2em;
+  margin-top: 1em;
+  text-indent: 2em;
+}
+
+body {
+  background-color: snow;
+  color: #2c3e50;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.5em;
+}
+
+nav {
+  align-items: center;
+  background-color:  #ff6600;
+  border-bottom: 2px solid #9E579D;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 73px;
+}
+
+ul {
+  color: #9E579D;
+  display: flex;
+  font-size: .8em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+ul li {
+  cursor: pointer;
+  margin-right: 2em;
+  transition: color .5s ease;
+}
+ul li:hover {
+  color: #574B90;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.img {
+  background: url(https://upload.wikimedia.org/wikipedia/en/2/26/Rajalakshmi_Institute_Of_Technology_%28RIT%29_Logo.jpg);
+  margin-top: 1em;
+  width: 483px;
+  height: 300px;
+}
+
+.logo {
+  background: url(http://www.ritchennai.org/image/logo.png);
+  background-size: contain;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-left: 2em;
+  transition: background .5s ease;
+  width: 70px;
+  height: 70px;
+}
+.logo:hover {
+  background: #9E579D;
+}
+
+.menu-icon {
+  color: #9E579D;
+  cursor: pointer;
+  display: none;
+  font-size: 3em;
+  margin-right: .75em;
+  transition: color .5s ease;
+}
+.menu-icon:hover {
+  color: #574B90;
+}
+
+.float-left {
+  float: left;
+  margin-right: 1em;
+}
+
+.float-right {
+  float: right;
+  margin-left: 1em;
+}
+
+.wrapper {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 93.75px;
+}
+
+
+
+</style>

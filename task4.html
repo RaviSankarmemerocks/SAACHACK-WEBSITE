@@ -1,0 +1,142 @@
+<main id="container">
+  <!--   Nav bar to collapse/expand -->
+  <nav :class="navBar">
+    <div class="logo">
+    </div>
+    <ul>
+      <li><a href="hack1.html">BACK</a></li>
+      
+    </ul>
+    <i class="material-icons menu-icon">menu</i>
+  </nav>
+  <!--   Dummy article for context -->
+  <div class="wrapper">
+    <article>
+      <h2>D.  Combating Natural Disasters</h2>
+      <h2>D01. Multi Hazard visualization as per location selected by Individual</h2>
+      <p><u>Description:</u> Each and every regions is affected with natural calamities, disasters etc. Region wise repository and visualization is needed such that if a person selects a particular area, he is able to know what kind of disasters, calamities etc. that region is prone to, for helping in selection of a type of house to be built and with the necessary precautions.</p>
+      <h2>D02. Prediction of rain and local weather based on the available 100 years of rainfall data and modeling a farmer support system.</h2>
+      <p><u>Description:</u>Some intelligent prediction/expectation of the local weather is essential for all agricultural activities. Mostly the farmers do it based on their understanding and observation on nature. An intelligent support system can be attempted with modern analytical tools and using database on the local weather information available. Predictive models can be made in support of the farmers for each localities and make it available on line whenever they are in need.</p>
+      <h2>D03. Mechanism to evaluate harmful radiation levels in working environment on human society and suggest measures to improve conditions.</h2>
+      <p><u>Description:</u>In our working environments such as home, office, or an industry, we are surrounded by various kinds of electronic equipments which emit various types of radiation. Exposure to these radiations is known to create health problems. There is no policy, protocol or management system available in the country to handle this issue. It will be good to visualize a monitoring system to of measure the level of harmful radiation in any working environment and provide warning and suggestion on safeguard mechanism. A model project in this line will be a good initiative.</p>
+      <h2>D04.Local level carbon sequestrations to mitigate Climate Change.</h2>
+      <p><u>Description:</u>Sequestering carbon from air is a requirement to mitigate the imminent global climate change. Drive for carbon sequestration in terms of mass planting of appropriate fruit trees and other beneficial trees in villages, decentralized anaerobic production of charcoal from weed trees and plants such as Prosopis and Lantana can be taken up by the villagers. A digital mechanism can be planned to motivate this process as a mass movement across the country.  A proper quantified documentation and recording of these activities into a national data base will also create a proof for the country to present our case in the international climate change negotiations.</p>
+      <h2>D05.Mechanism to evaluate Human-Wildlife conflicts in forest areas and develop technologies to mitigate the conflict issues.</h2>
+      <p><u>Description:</u>This is an age-old problem for the life of people living in and around forest areas. In the last two decades there is an increase in human-wildlife conflicts. This is due to increase in human population, decrease in forest cover and in some cases increase in wild animal population as well. Till date there is no mechanism available to evaluate the human-wildlife conflict issues in the state and national levels. Also, to mitigate the issue, no technological solutions are available. Development of sensor-based technology to mitigate human-elephant conflict issue could be one of the suggested problems.</p>
+    </article>
+      
+  </div>
+</main>
+<style type="text/css">
+	@import url("https://fonts.googleapis.com/css?family=Droid+Serif:700|Lato");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+article {
+  margin: 2em 0;
+  max-width: 960px;
+  width: 80%;
+}
+article h2 {
+  font-family: 'Droid Serif', serif;
+  font-size: 2.5em;
+  line-height: 1.5em;
+}
+article p {
+  initial-letter: 2;
+  line-height: 2em;
+  margin-top: 1em;
+  text-indent: 2em;
+}
+
+body {
+  background-color: snow;
+  color: #2c3e50;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.5em;
+}
+
+nav {
+  align-items: center;
+  background-color:  #ff6600;
+  border-bottom: 2px solid #9E579D;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 73px;
+}
+
+ul {
+  color: #9E579D;
+  display: flex;
+  font-size: .8em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+ul li {
+  cursor: pointer;
+  margin-right: 2em;
+  transition: color .5s ease;
+}
+ul li:hover {
+  color: #574B90;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.img {
+  background: url(https://upload.wikimedia.org/wikipedia/en/2/26/Rajalakshmi_Institute_Of_Technology_%28RIT%29_Logo.jpg);
+  margin-top: 1em;
+  width: 483px;
+  height: 300px;
+}
+
+.logo {
+  background: url(http://www.ritchennai.org/image/logo.png);
+  background-size: contain;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-left: 2em;
+  transition: background .5s ease;
+  width: 70px;
+  height: 70px;
+}
+.logo:hover {
+  background: #9E579D;
+}
+
+.menu-icon {
+  color: #9E579D;
+  cursor: pointer;
+  display: none;
+  font-size: 3em;
+  margin-right: .75em;
+  transition: color .5s ease;
+}
+.menu-icon:hover {
+  color: #574B90;
+}
+
+.float-left {
+  float: left;
+  margin-right: 1em;
+}
+
+.float-right {
+  float: right;
+  margin-left: 1em;
+}
+
+.wrapper {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 93.75px;
+}
+
+
+
+</style>

@@ -1,0 +1,138 @@
+<main id="container">
+  <!--   Nav bar to collapse/expand -->
+  <nav :class="navBar">
+    <div class="logo">
+    </div>
+    <ul>
+      <li><a href="hack1ss.html">BACK</a></li>
+      
+    </ul>
+    <i class="material-icons menu-icon">menu</i>
+  </nav>
+  <!--   Dummy article for context -->
+  <div class="wrapper">
+    <article>
+      <h2>F.  Augmented Reality</h2>
+      <h2><p>F01. A mobile application for textbooks that enhances the reading experience for school students.</p></h2>
+      <p><u>Description: </u>By scanning their physical textbooks, students can highlight, share, add notes, and watch videos, creating a more immersive learning experience. Steps to do
+• Create an Android App
+• Scan the text book
+• Extract words from the book using OCR
+• Connect to internet and search wiki based on the keyword.
+</p>
+      </article>
+  </div>
+</main>
+<style type="text/css">
+	@import url("https://fonts.googleapis.com/css?family=Droid+Serif:700|Lato");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+article {
+  margin: 2em 0;
+  max-width: 960px;
+  width: 80%;
+}
+article h2 {
+  font-family: 'Droid Serif', serif;
+  font-size: 2.5em;
+  line-height: 1.5em;
+}
+article p {
+  initial-letter: 2;
+  line-height: 2em;
+  margin-top: 1em;
+  text-indent: 2em;
+}
+
+body {
+  background-color: snow;
+  color: #2c3e50;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.5em;
+}
+
+nav {
+  align-items: center;
+  background-color:  #ff6600;
+  border-bottom: 2px solid #9E579D;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 73px;
+}
+
+ul {
+  color: #9E579D;
+  display: flex;
+  font-size: .8em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+ul li {
+  cursor: pointer;
+  margin-right: 2em;
+  transition: color .5s ease;
+}
+ul li:hover {
+  color: #574B90;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.img {
+  background: url(https://upload.wikimedia.org/wikipedia/en/2/26/Rajalakshmi_Institute_Of_Technology_%28RIT%29_Logo.jpg);
+  margin-top: 1em;
+  width: 483px;
+  height: 300px;
+}
+
+.logo {
+  background: url(http://www.ritchennai.org/image/logo.png);
+  background-size: contain;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-left: 2em;
+  transition: background .5s ease;
+  width: 70px;
+  height: 70px;
+}
+.logo:hover {
+  background: #9E579D;
+}
+
+.menu-icon {
+  color: #9E579D;
+  cursor: pointer;
+  display: none;
+  font-size: 3em;
+  margin-right: .75em;
+  transition: color .5s ease;
+}
+.menu-icon:hover {
+  color: #574B90;
+}
+
+.float-left {
+  float: left;
+  margin-right: 1em;
+}
+
+.float-right {
+  float: right;
+  margin-left: 1em;
+}
+
+.wrapper {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 93.75px;
+}
+
+
+
+</style>

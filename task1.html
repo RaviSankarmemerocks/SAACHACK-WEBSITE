@@ -1,0 +1,157 @@
+<main id="container">
+  <!--   Nav bar to collapse/expand -->
+  <nav :class="navBar">
+    <div class="logo">
+    </div>
+    <ul>
+      <li><a href="hack1.html">BACK</a></li>
+      
+    </ul>
+    <i class="material-icons menu-icon">menu</i>
+  </nav>
+  <!--   Dummy article for context -->
+  <div class="wrapper">
+    <article>
+      <h2>PROBLEM STATEMENTS FOR SAAC HACK-2018</h2>
+      <h2><p>A.	Fraud Risk Management</p></h2><br>
+      <p>
+ <b>A01.</b> It’s clear digital fraud is becoming more sophisticated and dangerous as Internet dependency and interconnectivity evolves. However, it’s important to note that fraudsters have been at play online since information was first shared in that channel. And with more good consumers moving online for everything from loan originations to insurance quotes and tax return filings, those with malicious intent are well positioned to exploit these trends. Therefore, adjusting your risk strategies is critical to account for the influx of online consumer data.<br>
+
+<b>A02.</b> Identity management is a problem across various industries whether financial services, insurance, government, healthcare or e-commerce. The challenge today, is to mitigate fraud risk when accounts are accessed, new loans or policies originated, and/or during benefits application without jeopardizing the customer experience.<br>
+
+<b>A03 Phishing:</b> <br>
+
+Phishing is easy way for scammers to access your information. If you are the user, you get a message asking you to enter your login information, through text (this is called “smishing”) or email. You are conned into thinking this is an authentic message from a business you trust. This information is then used to make purchases through the app you revealed your information for. Or it can be used on other apps/websites by counting on the fact that consumers use the same usernames/passwords across multiple apps. So the task is to create a browser extension or a software to detect phishing pages or to notify the privacy of using user information to be shared and also detect that's a trust worthy site or not.<br>
+
+ 
+
+<b>A04 Spamming:</b><br>
+
+Spamming the user and getting the user information is a easy method to hack users data. All the internet users are the victim of it . So many tech giant are stumbling upon to create a spam filters eg: Gmail , Sometimes the spam filters  gets wrong in detecting the correct mail . So Do you have any idea or algorithm to detect spam and help users to get rid off it . If you then try some hands of code and come up with a running code to detect the spam to make user get out of trouble.<br>
+
+<b>A05 Data Breach:</b><br>
+
+Data breach is the intentional or unintentional release of secure or private/confidential information to an un-trusted environment. we are in the information age and all the things now we see are data . But some of the data were kept hidden or secured to ensure the user privacy. As all data goes online for some usage they are in-secured and can be breached by the hackers Eg : Aadhar details of millions of people got online. So can you develop a software or effective database algorithm which can prevent data breach at some cause. We know that we cannot secure it all cause but we can try to keep them safe at some point of view Can you be the gatekeeper for those data by bringing your awesome work into it?<br>
+
+<b>A06 Piracy</b> <br>
+
+Piracy , the unauthorized use or reproduction of another's work. When the works of others are stolen and used for the profit then what’s the reason of others did those work. Feeling guilty may be you and all of them are part of this. We are knowing or unknowingly use the work of others for our purpose and it may lead to problem or some copyrights law suits. What to do with this problem? Can you develop a software to give the user details about work copyright information and avoid them of being using it. The work may be picture or article or software or anything else. I think web crawling help to work with this problem So go ahead and bring up the software we need.<br>
+ 
+</p>
+      
+    </article>
+  </div>
+</main>
+<style type="text/css">
+	@import url("https://fonts.googleapis.com/css?family=Droid+Serif:700|Lato");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+article {
+  margin: 2em 0;
+  max-width: 960px;
+  width: 80%;
+}
+article h2 {
+  font-family: 'Droid Serif', serif;
+  font-size: 2.5em;
+  line-height: 1.5em;
+}
+article p {
+  initial-letter: 2;
+  line-height: 2em;
+  margin-top: 1em;
+  text-indent: 2em;
+}
+
+body {
+  background-color: snow;
+  color: #2c3e50;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.5em;
+}
+
+nav {
+  align-items: center;
+  background-color:  #ff6600;
+  border-bottom: 2px solid #9E579D;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 73px;
+}
+
+ul {
+  color: #9E579D;
+  display: flex;
+  font-size: .8em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+ul li {
+  cursor: pointer;
+  margin-right: 2em;
+  transition: color .5s ease;
+}
+ul li:hover {
+  color: #574B90;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.img {
+  background: url(https://upload.wikimedia.org/wikipedia/en/2/26/Rajalakshmi_Institute_Of_Technology_%28RIT%29_Logo.jpg);
+  margin-top: 1em;
+  width: 483px;
+  height: 300px;
+}
+
+.logo {
+  background: url(http://www.ritchennai.org/image/logo.png);
+  background-size: contain;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-left: 2em;
+  transition: background .5s ease;
+  width: 70px;
+  height: 70px;
+}
+.logo:hover {
+  background: #9E579D;
+}
+
+.menu-icon {
+  color: #9E579D;
+  cursor: pointer;
+  display: none;
+  font-size: 3em;
+  margin-right: .75em;
+  transition: color .5s ease;
+}
+.menu-icon:hover {
+  color: #574B90;
+}
+
+.float-left {
+  float: left;
+  margin-right: 1em;
+}
+
+.float-right {
+  float: right;
+  margin-left: 1em;
+}
+
+.wrapper {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 93.75px;
+}
+
+
+
+</style>

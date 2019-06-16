@@ -1,0 +1,180 @@
+<main id="container">
+  <!--   Nav bar to collapse/expand -->
+  <nav :class="navBar">
+    <div class="logo">
+    </div>
+    <ul>
+      <li><a href="hack1.html">BACK</a></li>
+      
+    </ul>
+    <i class="material-icons menu-icon">menu</i>
+  </nav>
+  <!--   Dummy article for context -->
+  <div class="wrapper">
+    <article>
+      <b>What is this?</b>
+      <p>24 Hrs  Hackathon- It refers to technological invention dash that occur over a period of 24 hours consecutively to program software and hardware for solving a real world design challenge.</p>
+      
+      <b>Do I need to have any specific qualifications to be a participant for the Hackathon? </b>
+      <p>Students who are passionate about programming </p>
+      <b>Do I need to have any specific qualifications to be a participant for the Hackathon? </b>
+      <p>Students who are passionate about programming </p>
+      <b>When is this?</b>
+      <p>
+        July 20th and 21st  2018.
+      </p>
+      <b>Where is this?</b>
+      <p>Rajalakshmi Institute of Technology, Chennai, Tamil Nadu, India.</p>
+    </article>
+    <article>
+      <b>Any Platforms preferred?</b>
+      <p>The software can be a Mobile App, a Web Application or a Cloud Application! However students can incorporate any Open Source APIs, Frameworks and Platforms.</p>
+      <b>What are all the tracks to be given to the teams?</b>
+      <p>
+• Fraud Risk Management<br>
+• Revamping Marketing & Advertising Strategy<br>
+• Fighting Disabilities<br>
+• Combating Natural Disasters<br>
+• Advancement in Cyber Security<br>
+• Smart Cities<br>
+• Augmented Reality<br>
+• Artificial Intelligence<br>
+• Cloud Computing & Automation<br>
+
+      </p>
+      <b>Do I need to pay any money to register for the Hackathon?</b>
+      <p> Yes. You have to pay Rs. 500 per team to register yourself for this SAACHACK.</p>
+      <b>Do we need to have the entire idea fully working?</b>
+      <p> The entire idea need not be fully implemented however, the submission should be functional so that it can be reviewed by the judges.  </p>
+    </article>
+    <article>
+      <b>What is a selection criteria? </b>
+      
+      <p>Evaluation criteria will consist of novelty of the thought, complexity, clearness and details in the prescribed format, feasibility, practicability, sustainability, scale of impact, user experience and potential for future work progression. Preferences will be given to entries from Northeast while selecting between two similar ideas.</p>
+      <b>What is Judging Criteria?</b>
+      <p>1. TECHNOLOGY: How technically impressive was the hack? Was the technical problem the team tackled difficult? Did it use a particularly clever technique or did it use many different components? Did the technology involved make you go "Wow"?<br>
+
+2.  DESIGN: Did the team put thought into the user experience? How well designed is the interface? For a website, this might be about how beautiful the CSS or graphics are. For a hardware project, it might be more about how good the human-computer interaction is? <br>
+
+3.  COMPLETION: Did the team stretch themselves? Did they try to learn something new? What kind of projects have they worked on before? If a team which always does virtual reality projects decides to switch up and try doing a mobile app instead, that exploration should be rewarded.<br>
+
+4.  LEARNING: Does the hack work? Did the team achieve everything they wanted?<br>
+
+</p>
+      
+    </article>
+  </div>
+</main>
+<style type="text/css">
+	@import url("https://fonts.googleapis.com/css?family=Droid+Serif:700|Lato");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+article {
+  margin: 2em 0;
+  max-width: 960px;
+  width: 80%;
+}
+article h2 {
+  font-family: 'Droid Serif', serif;
+  font-size: 2.5em;
+  line-height: 1.5em;
+}
+article p {
+  initial-letter: 2;
+  line-height: 2em;
+  margin-top: 1em;
+  text-indent: 2em;
+}
+
+body {
+  background-color: snow;
+  color: #2c3e50;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.5em;
+}
+
+nav {
+  align-items: center;
+  background-color:  #ff6600;
+  border-bottom: 2px solid #9E579D;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 73px;
+}
+
+ul {
+  color: #9E579D;
+  display: flex;
+  font-size: .8em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+ul li {
+  cursor: pointer;
+  margin-right: 2em;
+  transition: color .5s ease;
+}
+ul li:hover {
+  color: #574B90;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.img {
+  background: url(https://upload.wikimedia.org/wikipedia/en/2/26/Rajalakshmi_Institute_Of_Technology_%28RIT%29_Logo.jpg);
+  margin-top: 1em;
+  width: 483px;
+  height: 300px;
+}
+
+.logo {
+  background: url(http://www.ritchennai.org/image/logo.png);
+  background-size: contain;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-left: 2em;
+  transition: background .5s ease;
+  width: 70px;
+  height: 70px;
+}
+.logo:hover {
+  background: #9E579D;
+}
+
+.menu-icon {
+  color: #9E579D;
+  cursor: pointer;
+  display: none;
+  font-size: 3em;
+  margin-right: .75em;
+  transition: color .5s ease;
+}
+.menu-icon:hover {
+  color: #574B90;
+}
+
+.float-left {
+  float: left;
+  margin-right: 1em;
+}
+
+.float-right {
+  float: right;
+  margin-left: 1em;
+}
+
+.wrapper {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 93.75px;
+}
+
+
+
+</style>

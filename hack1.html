@@ -1,0 +1,1519 @@
+ <head>
+ <!--	<meta name="viewport" content="width=device-width, initial-scale=1">-->
+ <style type="text/css">
+    
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,700);
+html,
+body {
+    display: block;
+    min-height: 100%;
+}
+
+body {
+    /*padding: 50px;*/
+  -webkit-font-smoothing: antialiased;
+    line-height: 50px;
+    font-weight: 600;
+    background: rgb(250, 250, 250);
+    margin: 0;
+  
+}
+
+ul{
+    padding: 0;
+}
+
+.main-body-wrapper{
+    font-family: 'Raleway', arial;
+    font-size: 16px;
+    font-weight: 400;
+    overflow: hidden;
+    width: 80vw;
+    display:block;
+    margin: auto;
+    background: rgb(255, 87, 34); 
+}
+
+.maxWidth{    
+    max-width: 1400px;   
+    /*  Adjust width of the example  - in this box as its a demo */
+}
+
+
+/*************   MAIN STYLES   **********************
+*********************************************************/
+
+
+/*  ============  NAV BAR  =============  */
+.navbar-main{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    position: fixed;
+    background: #fafafa;
+    width: 80vw;
+    max-width: 1400px;
+    z-index: 10;
+    top: 0;
+    height: 35px;
+}
+
+.navbar-main ul{
+    display: flex;
+    margin: 0;
+    height: 30px;
+    align-items: center;
+    list-style: none;
+}
+
+.navbar-main li a{
+    text-transform: uppercase;
+    text-decoration: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 20px;
+    padding-left: 20px;
+    font-weight: 700;
+    font-size: 0.8em;
+    letter-spacing: 0.3em;
+    color: rgb(191, 54, 12);
+    background: #fafafa;
+}
+
+.RITians{
+    margin: 1px auto;
+    display: block;
+}
+/*************   BURGER MENU   **********************
+*********************************************************/
+/*
+Burger menu adapted from Vivek Kumar Bansal (https://codepen.io/vkbansal/pen/QbapGz)
+*/
+
+body.open {
+    overflow: hidden;
+}
+
+body.open:before {
+    visibility: visible;
+    opacity: 1;
+}
+
+body:before {
+    content: "";
+    position: fixed;
+    background-color: rgb(255, 87, 34);
+    width: 100%;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    bottom: 60vh;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.4s ease;
+    z-index: 11;
+}
+
+.burger {
+    position: fixed;
+    top: 20px;
+}
+
+.burger__button {
+    display: flex;
+    position: relative;
+    background: rgb(0, 121, 107);
+    width: 50px;
+    height: 50px;
+    overflow-y: auto;
+    border-radius: 50%;
+    text-align: center;
+    vertical-align: middle;
+    transition: all 0.2s ease;
+    box-shadow: -20px 27px 55px 0px rgba(0,0,0,0.5);
+}
+
+.burger__button.open {
+    border: 2px solid #ffffff;
+    box-shadow: none;
+}
+
+.burger__button__icon {
+    display: inline-block;
+    position: absolute;
+    background: #fff;
+    margin: 0 auto;
+    width: 20px;
+    height: 2px;
+    top: 50%;
+    left: 0;
+    right: 0;
+    
+}
+
+.burger__button__icon:before,
+.burger__button__icon:after {
+    content: "";
+    position: absolute;
+    margin: 0 auto;
+    background: #fff;
+    width: 20px;
+    height: 2px;
+    left: 0;
+    right: 0;
+    
+}
+
+.burger__button__icon:before {
+    bottom: 10px;
+}
+
+.burger__button__icon:after {
+    top: 10px;
+}
+
+.burger__button.open .burger__button__icon {
+    background: transparent;
+}
+
+.burger__button.open .burger__button__icon:before,
+.burger__button.open .burger__button__icon:after {
+    transform-origin: 0 50%;
+    width: 28.28427125px;
+}
+
+.burger__button.open .burger__button__icon:before {
+    transform: rotateZ(0.78539816rad);
+}
+
+.burger__button.open .burger__button__icon:after {
+    transform: rotateZ(-0.78539816rad);
+}
+
+.burger__menu {
+    list-style-type: none;
+    width: 100%;
+}
+
+.burger__menu li {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    visibility: hidden;
+    opacity: 0;
+    
+}
+
+.burger__menu a {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 4vmax;
+    line-height: 8vmax;
+    font-weight: 600;
+    border-left: 3px solid transparent;
+    padding-left: 0;
+}
+
+.burger__menu li a{
+    background: rgb(255, 87, 34);
+}
+
+.burger__button.open + .burger__menu li {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+#burgerOn{
+    display: none;
+}
+
+
+nav#burgerOn.burger{
+    z-index: 12;
+    width: 100vw;
+}
+
+a#burger-button.burger__button{
+    left: 81vw;
+    
+}
+/*****************************************************/
+/*****************************************************/
+
+
+
+/*
+/*  ============  SHADE 1  =============  */
+
+.shade1 {
+    /*  display: none;   */
+    position: absolute;
+    z-index: 2;
+    opacity: 0.1;
+    top: 50px;
+}
+
+
+/*  ============  LAPTOP &  TITLE COLUMN  & CODE LINK =============  */
+.lappyTitleWrapper{
+    display: flex;
+    flex-direction: row;
+    flex-grow: 2;
+    width: 100%;
+}
+
+
+.lapy{
+    position: absolute;
+    z-index: 3;
+    opacity: 1;
+}
+
+#lapytwister{
+    
+    transform:rotate(50deg);
+    position: relative;
+    top: 150px;
+    right: 5%;
+    z-index: 1;
+}
+
+.lapy img{
+    height: 450px;
+    width: 450px; 
+}
+
+
+/*  ============  TITLE COLUMN  =============  */
+
+
+h2 {
+    line-height: 1.3em;
+    font-size: 1.0em;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: white;
+    padding: 0;
+    margin: 0px;
+}
+
+.titleCol { 
+    display: flex;
+    position: relative;
+    height: 450px;   /*  Adjust height of the example */
+    color: white;
+    right: -5%;
+}
+
+.col {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    line-height: 1.3em;
+    font-size: 1.2em;
+    font-weight: 400;
+    padding-top: 130px;
+    text-align: left;
+}
+
+
+.col h1{
+    z-index: 1;
+    text-align: center;
+    background: rgb(255, 87, 34);
+    line-height: 0.2em;
+    align-content: center;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    letter-spacing: 0.5em;
+    font-weight: 300;
+    padding: 0;
+}
+
+
+.codeLink{
+    position: absolute;
+    top: 400px;
+    left: 65%;
+    z-index: 3;
+    width:100px;
+    height:100px;
+    background:url(reg.png);
+   
+    position: absolute;
+    border-radius: 150%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all 0.3s ease-in-out;
+    box-shadow: -20px 27px 55px 0px rgba(0,0,0,0.75);
+}
+
+
+.codeLink:hover{
+    transform: scale(1.2);
+    background-position: center;
+    box-shadow: -64px 67px 85px 0px rgba(0,0,0,0.75);
+}
+
+
+/*  ============  ABOUT  =============  */
+
+.aboutWrapper{
+    display: flex;
+    flex-direction: column;
+    height: auto;   /*  Adjust height of the example */
+    background-color: rgb(255,255,255);
+    width: 80%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    z-index: 4;
+}
+
+.aboutCol { 
+    align-content: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;   /*  Adjust height of the example */
+    /*background: #138655; */
+    color: #111;
+    max-width: 100%;
+    margin-top: 5vh;
+    margin-bottom: 3vh;
+    overflow: hidden;
+    
+}
+
+.ab-col {
+    display: flex;
+    flex-direction: column;
+    flex-basis: auto;
+    line-height: 1.3em;
+    font-size: 1.2em;
+    font-weight: 400;
+    text-align: justify;
+    /* background: #555;*/
+    max-width: 70%;  /* width od 'Abot' inside its box, so 100% means whole of its box*/
+}
+
+.ab-col span{
+    
+    z-index: 3;
+    padding-bottom: 50px;
+}
+
+.ab-col .about-title{
+    
+    line-height: 1em;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    letter-spacing: 0.3em;
+}
+
+span.about-title{
+    padding: 0px;
+    padding-top: 20px;
+    
+}
+
+/*  ============  SOCIAL BUTTONS  =============  */
+
+
+.socialBox {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:space-around;
+    z-index: 7;
+}
+
+
+#twitter_logo{
+    background: url(https://upload.wikimedia.org/wikipedia/en/8/8c/Facebook_Home_logo_old.svg);
+    
+    background-size: cover;
+} 
+
+#code_logo{
+    background: url(https://www.shareicon.net/data/128x128/2017/06/28/888047_logo_512x512.png);
+    
+    background-size: cover;
+}
+
+
+#fcc_logo{
+    background: url(https://image.flaticon.com/icons/svg/355/355992.svg);
+    background-size: cover;
+}
+
+
+
+
+.logo{
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+    box-shadow: -20px 27px 55px 0px rgba(0,0,0,0.75);
+    margin-bottom: 50px;
+}
+    
+.logo:hover{
+    transform: scale(1.2);
+    box-shadow: -64px 67px 85px 0px rgba(0,0,0,0.75);
+    background-position: center;
+}
+
+
+
+.logo a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #111;
+    justify-content: center;
+    
+}
+
+
+.logo>a>p{
+    
+    margin-top: 0;
+    position: relative;
+    top: 80px;
+}
+
+
+
+ /*  ============  < CODE > TITLE & TAGLINE  =========  */
+/*  =================================================  */
+
+/*  Media Query min 1000px ****  /
+
+/*  Two block statr side by side to become a colmn on wrap. 
+The first block conatins another flex block containing 
+the texts e.g. ' < CODE > 'This shanges on its parent block shrinking to<CODE>*/
+
+/* This is possibly three span's */
+
+
+
+
+/* code Wrapper  */
+
+.shade2{
+    position: absolute;
+    opacity: 0.1;
+    
+}
+
+
+
+.codeWrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;   /*  Adjust height of the example */
+    background: rgb(255, 87, 34);
+    color: white;
+    max-width: 100%;
+    padding: 100px;
+    z-index: 0;
+
+}
+
+
+
+.tagBox {
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    font-weight: 600;
+    padding: 0;
+    z-index: 1;
+}
+
+.codeTagBox { 
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: center;
+    z-index: 1;
+}
+
+
+.tagBox:nth-child(1) {
+    flex-basis: auto;
+    font-size: 3em;   /* This setting for media query for less than 650px*/
+    font-weight: 500;
+    letter-spacing: 0.5em;
+    letter-spacing: 0.2em;    /* This setting for media query for less than 650px*/
+    text-align: left;
+    width: 100%;   /* Adjust to fit ' <CODE> ' in full width  */
+    z-index: 1;
+}
+
+
+
+.bracket {
+    color: rgb(255,179,0);
+    z-index: 1;
+}
+
+
+
+.tagBox:nth-child(2) {
+    flex-basis: 100px;  /* controls the height of the box */
+    flex-basis: auto; /* auto makes the box fit all the text exactly*/
+    line-height: 1.3em;
+    font-weight: 500;
+    font-size: 1.3em;
+    width: auto;
+    text-align: left;
+    z-index: 1;
+}
+
+
+
+/*  ============  CODE EXAMPLE BUTTONS  =============  */
+/*  ==================================================  */
+
+
+/********  LINKS TO APPS TO CONVERTED TO  A JAVASCRIPT ARRAY   *********/
+
+#appLink1{ 
+    background: url("risk.jpg");
+    background-size: contain;
+	z-index: 0;
+}
+
+
+#appLink2{ 
+    background: url("sta.jpg"); 
+    background-size: contain;
+	z-index: 0;
+}
+
+
+#appLink3{ 
+    
+ background: url("disabilities.jpg");
+    background-size: contain;
+	z-index: 0;
+}
+
+
+#appLink4{ 
+    background: url("disaster.jpg");
+    background-size: contain;
+	z-index: 0;
+}
+
+
+#appLink5{ 
+    background: url("sc.jpg"); 
+
+    background-size: contain;
+	z-index: 0;
+}
+
+
+#appLink6{ 
+    background: url("agr.jpg");
+    background-size: contain;
+	z-index: 0;
+}
+#appLink7{
+    background: url("ai.jpg");
+    background-size: contain;
+	z-index: 0;
+}
+#appLink8{
+    background: url("cc.jpg");
+    background-size: contain;
+	z-index: 0;
+}
+#appLink9{
+    background: url("bro.gif");
+    background-size: contain;
+	z-index: 0;
+}
+#appLink10{
+    background: url("CTF.png");
+    background-size: contain;
+    z-index: 0;
+}
+
+
+.codeExamplesBox {
+    position: relative;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    z-index: 4;
+}
+
+
+.appSize{
+    min-width: 150px;
+    min-height: 150px;
+    margin: 50px;
+    border: solid 10px rgb(255, 179, 0);
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: all 0.3s ease-in-out;
+    box-shadow: -20px 27px 55px 0px rgba(0,0,0,0.75);
+}
+
+
+.appSize:hover{
+    transform: scale(1.4);
+    box-shadow: -64px 67px 85px 0px rgba(0,0,0,0.75);
+    pointer-events:stroke;
+}
+
+
+
+
+
+.container {
+  color: #fff;
+  text-align: center;
+  font-family: Raleway, sans-serif;
+}
+
+h1 {
+  font-weight: normal;
+}
+
+li {
+  display: inline-block;
+  font-size: 1.5em;
+  list-style-type: none;
+  padding: 1em;
+  text-transform: uppercase;
+}
+
+li span {
+  display: block;
+  font-size: 4.5rem;
+}
+/*  ======================  CTA  ==================  */
+/*  ==================================================  */
+
+.cta{
+    flex-direction: column;
+    color: white;
+    font-size: 20px;
+    margin-left: 25%;
+    margin-right: 25%;
+    text-align: center;
+    line-height: 1em;
+    margin-bottom: 50px;
+}
+
+.cta h3{
+    display: flex;
+    justify-content: center;
+    line-height: 1.em;
+    font-size: 1em;
+    font-weight: 600;
+    flex-wrap: wrap;
+}
+
+.cta p{
+    
+    font-size: 1.2em;
+    font-weight: 300; 
+}
+
+
+
+
+
+/*  ======================  FOOTER  ==================  */
+/*  ==================================================  */
+
+
+
+.footer{
+    background: white;
+    color: black;
+    z-index: 9;
+    
+}
+
+.footerBottom {
+    display: flex;
+    flex-direction: column;
+}
+
+.item {
+    text-align: center;
+    line-height: 50px;
+    font-weight: 600;
+    font-size: 0.9em;
+    height: 4em;
+    width: auto;
+    padding-top: 10px;
+    margin-right: 1em;
+}
+
+
+.footerLink .chevron{
+    opacity: 0.2;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 4em;
+    text-decoration: none;
+    color: white;
+    margin: auto;
+    transition: all 0.3s;
+    
+}
+
+
+.footerLink .chevron:hover{
+    transform: scale(1.3);
+    opacity: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 4em;
+    text-decoration: none;
+    margin: auto;
+    color: white;
+}
+
+
+
+
+
+
+/*  =====================  MEDIA QUERIES  =====================  */
+/*  ===========================================================  */
+
+
+@media screen and (max-width: 1200px){
+    
+    #lapytwister{
+    transform:rotate(45deg);
+    height: 200px;
+    width: 200px;
+    z-index: 1;
+    }
+    
+    .col{
+        left: 5vw;
+        z-index: 1;
+    }
+    
+}
+
+@media screen and (max-width: 1000px){
+    
+    #burgerOn{
+    display: block;
+    }
+    
+    #navbarOn{
+        display: none;
+    }
+    
+    .main-body-wrapper{
+        width: 100vw;
+    }
+    
+    .navbar-main{
+        width: 100vw;
+    }
+    
+    
+    #lapytwister{
+    transform:rotate(45deg);
+    height: 100px;
+    width: 100px;
+    z-index: 1;
+    }
+    
+    
+    .col{
+        left: 15vw;
+        z-index: 1;
+    }
+    
+    span.about-title{
+    padding: 0px;
+    padding-top: 50px;
+    }
+}
+
+
+@media screen and (max-width: 700px){
+ 
+     #burgerOn{
+    display: block;
+    }
+    
+     #navbarOn{
+        display: none;
+    }
+    
+    .main-body-wrapper{
+        width: 100vw;
+    }
+
+    
+    span.about-title{
+    padding: 0px;
+    padding-top: 80px;
+    }
+    
+    .codeLink{
+        width: 70px;
+        height: 70px;
+    }
+    
+    
+    .col{
+        left: 90px;
+        z-index: 1;
+    }
+    
+}
+
+
+
+
+@media screen and (max-width: 560px){
+    
+    
+    #burgerOn{
+    display: block;
+    }
+    
+     #navbarOn{
+        display: none;
+    }
+    
+    .main-body-wrapper{
+        width: 100vw;
+    }
+    
+    
+    body{
+        margin: 0;
+        padding: 0;
+    }
+ 
+    #callToAction.cta{
+        font-size: 14px;
+        font-weight: 600;
+    }
+    
+    .cta p{
+        font-weight: 600;
+    }
+     
+
+
+.col {
+    left: 30px;
+    padding-top: 100px;
+}
+    
+
+    
+.col h1{
+    
+    text-align: left;
+}
+
+   
+    .codeLink{
+        width: 70px;
+        height: 70px;
+    }
+    
+
+}
+
+
+
+
+
+@media screen and (max-width: 480px){
+    
+    #burgerOn{
+    display: block;
+    }
+    
+     #navbarOn{
+        display: none;
+    }
+    
+    .main-body-wrapper{
+        width: 100vw;
+    }
+    
+    .navbar-main{
+        transform: translateY(100);
+        width: 100vw;
+        justify-content:center;
+        z-index: 10;
+    }
+    
+    .navbar-main ul{
+        flex-direction: column;
+        padding: 0;
+        justify-content:space-between;
+        height: 200px;
+    }
+    
+    .navbar-main ul li{
+    margin-left: 0em;
+        margin-bottom: 10px;
+    }
+    
+    body{
+        margin: 0;
+        padding: 0;
+    }
+ 
+    #callToAction.cta{
+        font-size: 14px;
+        font-weight: 600;
+    }
+    
+    .cta p{
+        font-weight: 600;
+    }
+    
+    
+    .ab-col span{
+        text-align: left;
+        font-size: 16px;
+    }
+  
+    
+    .titleCol{
+        
+        right: 0;
+        left: 3%;
+    }
+
+    .col h1{
+        
+        font-size: 1.3em;
+    }
+
+    
+    .codeTagBox{
+        margin: 0;
+    }
+    
+    .tagBox.tagText{
+        font-size: 1em;
+        font-weight: 600;
+    }
+    
+    .tagBox.tagTitle{
+        width: 220px;
+        font-size: 2em;
+        top: 50px;
+    }
+    
+   .codeLink{
+        width: 70px;
+        height: 70px;
+    }
+    
+    .codeWrapper{
+        padding: 25px;
+        
+    }
+    
+    .appSize{
+        min-width: 110px;
+        min-height: 110px;
+        margin: 15px;
+    }
+    
+    
+
+    
+}
+
+
+/*Button Two*/
+.button-two {
+  color: #fff;
+  border-radius: 4px;
+  background-color:#2d8659;
+  border: none;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+}
+
+
+.button-two span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button-two span:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button-two:hover span {
+  padding-right: 25px;
+}
+
+.button-two:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+
+@media screen and (max-width: 400px){
+    
+    
+    .titleCol{
+        position: relative;
+        left: -60px;
+        
+    }
+    
+    
+    .col {
+        padding-top: 70px;
+    }
+    
+    .col h1{
+        
+        font-size: 1.3em;
+    }
+    
+    .col h2{
+        font-size: 0.8em;
+        font-weight: 600;
+    }
+
+    
+    
+
+    
+}
+
+
+/*  ===========================================================  */
+/*  ===========================================================  */
+
+
+
+ </style>
+ </head>
+ 	
+ 	<title><img src="logo11.png"> RIT's Hackathon</title>
+ <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    
+    
+ 
+<!--  
+********************   MAIN BODY   ***********************
+**********************************************************
+==========================================================
+==========================================================-->
+
+
+           
+ <div class="main-body-wrapper maxWidth"  id="top">
+
+<!--  
+********************   NAV BARS   ***********************
+*********************************************************-->
+<nav id="navbarOn" class="navbar-main">
+    
+        <ul>
+            <li><a href="#aboutHere">About</a></li>
+            <li><a href="#codeHere">Themes</a></li>
+            <!--<li><a href="mailto:ravisankarmaru@gmail.com" >Email</a></li>-->
+            <li><a href="faq.html" >FAQ's</a></li>
+             <li><a href="rules.html" >Rules</a></li>
+             <!--<li><a href="saachack18-tracks.pdf" >Problem Statements</a></li>
+             <li><a href="http://www.ritchennai.org/saachack/register.php" >REGISTER NOW!</a></li>-->
+        </ul>
+</nav> 
+
+<nav id="burgerOn" class="burger">
+    <!--<img src="https://upload.wikimedia.org/wikipedia/en/thumb/2/26/Rajalakshmi_Institute_Of_Technology_%28RIT%29_Logo.jpg/220px-Rajalakshmi_Institute_Of_Technology_%28RIT%29_Logo.jpg" alt="" class="logo">-->
+  <a href="#" class="burger__button" id="burger-button">
+    <span class="burger__button__icon"></span>
+  </a>
+  <ul class="burger__menu" id="about_code_cta">
+  <li style="padding:0em; z-index:-1; position: absolute;"><a onclick="close_menu()" href="mailto:saachack@ritchennai.edu.in">email</a></li>
+    <li style="padding:0em; z-index:-1; position: absolute;"><a onclick="close_menu()" href="faq.html">FAQ's</a></li>
+    <li style="padding:0em; z-index:-1; position: absolute;"><a onclick="close_menu()" href="rules.html">Rules</a></li>
+     <li style="padding:0em; z-index:-1; position: absolute;"><a onclick="close_menu()" href="saachack18-tracks.pdf">Problem Statements</a></li>
+      <li style="padding:0em; z-index:-1; position: absolute;"><a onclick="close_menu()" href="http://www.ritchennai.org/saachack/register.php">REGISTER NOW!</a></li>
+
+  </ul>
+</nav>
+ 
+  <!--  <li><a onclick="close_menu()" href="#aboutHere">about</a></li>-->
+   <!-- <li><a onclick="close_menu()" href="#codeHere">code</a></li>-->
+<!--  
+********************   SHADE and LAPTOP PIC  *****************
+*********************************************************--> 
+  
+<div class="lappyTitleWrapper" id="lapTitWrap">
+       
+        <canvas id="canvasShade1" class="shade1"></canvas>
+        
+        <div class="lapy" id="lapytwister">
+              <img src="https://rawgit.com/appijumbo/landingPage/gh-pages/img/laptop.svg" alt="laptop">
+        </div>    
+       
+<!--  
+********************   TITLE COLUMN   *****************
+*********************************************************--> 
+
+<header class="titleCol">
+                   
+    <div class="col">
+        <h1 class="title"><b>SAACHACK</b><br><br><br><br><b>2k18</b></h1>
+        <h2>SAACHACK (Security/Smart city Augmentation reality Artificial intelligence Cloud HACKathon) 2018 is a 24 hours Hackathon organized by Rajalakshmi Institute of Technology, Chennai. 
+        The motto of SAACHACK is Making Ideas into Reality.
+ </h2>
+    </div>
+
+</header> <!-- End of titleCol  --> 
+        
+        
+<!-- **************   SHORTCUT CODE LINK   **************
+********************************************************* -->
+             
+    <a class="codeLink" href="http://www.ritchennai.org/saachack/register.php"></a>
+            
+</div> <!-- End of LappyTitleWrapper -->
+   
+<!-- **************   ABOUT & SOCIAL MEDIA COLUMN   **************
+********************************************************* --> 
+<article class="aboutWrapper" id="aboutHere">
+
+    <section class="aboutCol">
+        <div class="ab-col"><span class="about-title">About RIT</span><br><span> Education today is an indispensable springboard to advancement. We, at RAJALAKSHMI INSTITUTE OF TECHNOLOGY, have dedicated ourselves to impart technical and engineering education at its best. We strive to provide the students with the right environment to acquire knowledge, the spirit of excellence and impart quality technical education that fosters learning and research. Rajalakshmi Institute of Technology is determined to spawn creative, highly employable, disciplined and competent global citizens.</span>
+            <span class="about-title">Vision</span><br><span> 
+        1 To provide quality technical education that fosters the spirit of learning and research.
+        2 To spawn creative, globally competent, highly employable and disciplined professionals through an innovative synergistic model of education that promotes academic excellence, scientific pursuit, and professionalism.
+
+        </span>
+        <span class="about-title">Mission</span><br><span>
+         1 To impart education that caters to the growing challenges of the Industry and social needs of our nation.<br>
+         2 To constantly upgrade the standards of teaching and learning in the field of engineering and technology.<br>
+         3 To bridge the gap between Academia and Industry.<br>
+         4 To promote and encourage the spirit of Research in engineering and technology.
+
+        </span>
+    <span class="about-title">ISO Quality Policy</span><br><span>
+       1 To become an exemplary institute in academics and education by: Maintaining high professional standards in the pursuit of academic excellence competitively<br>
+       2 Developing students by innovative training towards enhancing technical and professional knowledge and skills.<br>
+       3 Consistently upgrading infrastructure in line with the technological changes in the spirit of learning and research.
+ 
+    </span>
+    <span class="about-title">About SAACHACK'18</span><br>
+        <span>Overview:</span><br><span>
+        The major objective of the SAACHACK includes exploring new technologies, driving business innovation, bringing about civic involvement, fostering awareness, and encouraging ownership for a social cause. The Rajalakshmi Institute of Technology will provide a platform to showcase the coding and implementation skills and provided excellent way to motivate student community and making learning interesting. SAACHACK helps in exploring new ideas and finding new talents.  The major benefit for RIT is to enrich practical ability of the student of various levels.</span>
+        <span>CLICK PLUS TO GET REGISTED, YOU CAN ALSO DOWNLOAD/VIEW THE PROJECT THEMES THAT ARE AVAILABLE</spanp>
+    </span>
+    <span class="about-title">PRIZES:</span><br><span>
+        Winners will be categorised as <b>1st</b>,<b>2nd</b>and<b>3rd</b>and are awarded with attractive prizes!!!
+
+    </span>
+        </div>        
+    </section> <!-- End ofanoutCol -->
+   
+    <section class="socialBox">
+        <div id="twitter_logo" class="logo"><a href="https://www.facebook.com/events/466509660486262/?acontext=%7B%22action_history%22%3A[%7B%22mechanism%22%3A%22bookmarks%22%2C%22surface%22%3A%22bookmarks_menu%22%2C%22extra_data%22%3A%22[]%22%7D%2C%7B%22surface%22%3A%22dashboard%22%2C%22mechanism%22%3A%22calendar_tab_event%22%2C%22extra_data%22%3A%22[]%22%7D]%2C%22ref%22%3A46%2C%22source%22%3A2%7D"><p>FaceBook</p></a></div>
+        <div id="code_logo" class="logo"><a href="https://www.instagram.com/?hl=en"><p>Instagram</p></a></div>
+        <div id="fcc_logo" class="logo"><a href="mailto:saachack@ritchennai.edu.in"><p>saachack@ritchennai.edu.in</p></a></div>
+        
+    </section> <!-- End of socialBox -->
+    
+</article> <!-- End aboutWrapper  -->   
+     
+
+<canvas id="canvasShade2" class="shade2"></canvas>
+<!--  ==============   CODE WRAPPER   ================= -->
+
+<div id="codeHere" class="codeWrapper">
+  
+  
+   
+    <!--  ********************   CODE TAGLINE   **************** -->      
+    
+    <section class="codeTagBox ">  
+        <div class="tagBox tagTitle">
+            <span class="bracket">&lt;</span>
+            <span>Themes</span>
+            <span class="bracket">&gt;</span>
+        </div>
+               
+        <div class="tagBox tagText">
+           Hacks in any of the following themes can be invited:<br>
+           1   Revamping Marketing & Advertising Strategy<br>
+           2   Fighting Disabilities<br>
+           3   Combating Natural Disasters<br>
+           4   Smart Cities<br>
+           5   Augmented Reality<br>
+           6   Artificial Intelligence<br>
+           7   Cloud Computing & Automation<br>
+
+        </div>
+    </section> <!-- End of codeTagBox -->        
+
+ <!--  ********************   CODE EXAMPLE BUTTONS   *****************-->   
+    
+    <section class="codeExamplesBox">
+    
+        <a id="appLink1" class="appSize" href="task1.html" alt="" target="_blank"></a>
+        <a id="appLink2" class="appSize" href="task2.html" alt="" target="_blank"></a>
+        <a id="appLink3" class="appSize" href="task3.html" alt="random quote machine app" target="_blank"></a>
+        <a id="appLink4" class="appSize" href="task4.html" alt="calculator app" target="_blank"></a>
+        <a id="appLink5" class="appSize" href="task5.html" alt="Keir Hardi tribute page" target="_blank"></a>
+        <a id="appLink6" class="appSize" href="task6.html" alt="" target="_blank"></a>
+        <a id="appLink7" class="appSize" href="task7.html" alt="" target="_blank"></a>
+        <a id="appLink8" class="appSize" href="task8.html" alt="" target="_blank"></a>
+         <a id="appLink9" class="appSize" href="saachack18-tracks.pdf" alt="" target="_blank"></a>
+         <a id="appLink10" class="appSize" href="CTF.pdf" alt="" target="_blank"></a>
+    <div class="tagBox tagText"><span>Outcome of SAACHACK:</span><br>
+       1   Students will be able to change their  ideas  into products<br>
+       2   Students will be able to breed Innovations from ideation to execution within a highly- compressed timescale<br>
+       3   Students will be able to build a Community for developing and promoting their creativity, collaboration and innovative thinking<br>
+       4    Students will be able to know the usage of  Intense hiring platforms<br>
+       5   Students will be able to provide a great setting for finding solutions to the problems<br> 
+       <div class="container"><br>
+  
+  <ul>
+    <li><span id="days"></span>days</li>
+    <li><span id="hours"></span>Hours</li>
+    <li><span id="minutes"></span>Minutes</li>
+    <li><span id="seconds"></span>Seconds</li>
+  </ul>
+</div>
+       
+    </div>
+   
+    <b>
+        Sripaad Srinivasan (president):9840386286<br>
+        Vishwak senan.G :9486161866<br>
+        Venkat Raman.K (CTF Organizer):9840670318<br>
+        </b>
+    </section>   <!-- End of codeExamplesBox -->   
+   
+               
+</div> <!-- End of Code wrapper  -->        
+                  
+      
+<!-- ***************** CTA *************** -->   
+
+
+  <!-- End of CTA -->                
+                                  
+                                                   
+                                                                                     
+<!-- ******** LAPTOP HANDS EMAIL WAS HERE ********* -->  
+
+
+
+<!-- ******** FOOTER ********* -->   
+
+<footer class="footer">
+        <div class="footerLink">
+            <a href="#top" class="chevron">&#x2227;</a>
+        </div>      
+
+           
+        <div class="footerBottom">
+            <img src="log11.png" height="400" width="400"class="RITians">
+            <img src="http://www.ritchennai.org/image/logo.png" height="150" width="150" class="RITians">
+             <img src="RiLogo.jpg" height="150" width="335"  class="RITians">
+            <h4 class="item">&copy; made with <span class="heart-icon"> love💕 </span> by Ravisankar MR & Ramasamy NS(Cse)</h4>
+
+        </div>               
+</footer>                     
+   
+   
+</div>   
+   
+
+
+<script>window.jQuery || document.write('<script src="./js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+<script src="./js/main.js"></script>
+    
+</body>
+<script type="text/javascript">
+    var burger = document.getElementById("burger-button");
+/*error in this function */
+function close_menu() {
+    document.body.classList.toggle("open");
+    burger.classList.toggle("open");
+}
+/*
+classList property returns the class name(s) of an element. It's read-only, but to modify use add() remove() and toggle() methods.
+*/
+
+
+
+burger.addEventListener("click", function (e) {  /*  event handler 'click' is attached to the "burger-button" element  */
+    e.preventDefault();   /*  the default action of the event will not be triggered when buger clicked */
+    close_menu();   /*  then toggle the 'open' class, which closes the menu */
+});
+
+/*  Use the element.removeEventListener() method remove the 'click' event handlers from "burger-menu" in a more sophisticated design - Good practice  */
+
+
+
+
+/***************************  SMOOTH SCROLL **************************/
+
+// http://www.abeautifulsite.net/smoothly-scroll-to-an-element-without-a-jquery-plugin-2/
+
+
+$('a[href^="#"]').on('click', function(event) {
+
+    var target = $( $(this).attr('href') );   /* assign to 'target' the attributes of the anchor clicked */
+
+    if( target.length ) {   /*  if target length isnt zero */
+        event.preventDefault();
+        $('html, body').animate({   
+            scrollTop: target.offset().top
+        }, 1000);
+        /* animate the body using scrollTop, to the href attribute of the anchor clicked, for 1 second duration */
+    }
+
+});
+
+
+/****************** DRAW SHADE TRIANGLE FUNCTION *********************/
+
+function draw_triangle(ctx_width, ctx_height, top_h, element, x_origin, y_origin, x_shift, y_shift){
+    
+    var c = document.getElementById(element);
+    var context = c.getContext("2d");
+    
+    $("#"+element).attr({width:ctx_width, height:ctx_height});
+    $("#"+element).css({width: "ctx_width"+"px", height: "ctx_height"+"px", top:"top_h"+"px"}); 
+    
+    context.beginPath();   // Draw a path
+    
+        context.moveTo(x_origin, y_origin);   // Top Corner origin
+        context.lineTo(x_shift, y_shift);  // Bottom Right
+        context.lineTo(x_origin, y_shift);  // Bottom Left
+    
+    context.closePath();
+    context.fillStyle = "#000";  // Fill the path
+    context.fill(); 
+}
+
+/****************** SHADE AND LAPTOP ANGLE *********************/
+
+function shade1(h1, w1){
+    var top_height = 0;
+    draw_triangle(w1, h1, top_height, "canvasShade1" ,0, 0, w1, h1);
+}
+
+
+function shade2(h1, w1){
+    var half_width = w1/2;
+    var s_height = $("#codeHere").height() + 270 + $(".cta").height();
+    draw_triangle(w1, s_height, h1, "canvasShade2", w1, 0, half_width, s_height);
+}
+
+
+var h1 = $("#lapTitWrap").height() + $("#aboutHere").height() + 50;
+var w1 = $("#top").width();
+
+window.onload = shade1(h1, w1);   /*  Draw shades when page loads  */
+window.onload = shade2(h1, w1);
+
+$(window).resize(function() {  /* keep redrawing shade when page re-sized */
+    var h1 = $("#lapTitWrap").height() + $("#aboutHere").height() + 50;
+var w1 = $("#top").width();
+    shade1(h1, w1);
+    shade2(h1, w1);
+});
+
+
+
+
+
+</script>
+<script type="text/javascript">
+	const second = 1000,
+      minute = second * 60,
+      hour = minute * 60,
+      day = hour * 24;
+
+let countDown = new Date('jul 27, 2019 00:00:00').getTime(),
+    x = setInterval(function() {
+
+      let now = new Date().getTime(),
+          distance = countDown - now;
+  var d=Math.floor(distance / (day));
+var h=Math.floor((distance % (day)) / (hour));
+var m= Math.floor((distance % (hour)) / (minute));
+var s=Math.floor((distance % (minute)) / second);
+if(s>=0){
+      document.getElementById('days').innerText =d,
+        document.getElementById('hours').innerText =h,
+        document.getElementById('minutes').innerText =m,
+        document.getElementById('seconds').innerText =s;
+      }else{
+
+  document.getElementById('days').innerText ="00",
+        document.getElementById('hours').innerText ="00",
+        document.getElementById('minutes').innerText ="00",
+        document.getElementById('seconds').innerText ="00";
+}
+    
+
+    
+
+    }, second)        
+</script>

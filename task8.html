@@ -1,0 +1,249 @@
+<main id="container">
+  <!--   Nav bar to collapse/expand -->
+  <nav :class="navBar">
+    <div class="logo">
+    </div>
+    <ul>
+      <li><a href="hack1.html">BACK</a></li>
+      
+    </ul>
+    <i class="material-icons menu-icon">menu</i>
+  </nav>
+  <!--   Dummy article for context -->
+  <div class="wrapper">
+    <article>
+     <h2>H. Cloud Computing and Automation</h2>
+<p><b>     H01.</b> 
+Scenario involves water usage and temperature data
+- For one house
+- For one neighborhood
+- For one city (multiple neighborhoods)
+• Each team works with a “gateway” database
+- Gateway can represent the data for one house
+- “historical” data for house/can be generated
+- Current sensor data can be generated or using sensor(s) on the participant’s own device
+• “Cloud” database can also be created to represent the consolidation of the gateway databases, which would represent all the homes
+</p>
+<p><b>H02.</b> 
+Work with the local gateway data and correlate the temperature and water consumption data for one home
+• Establish real world scenario around cost savings (examples)
+- Water more than XXX gallons per month is more expensive
+- Water delivered during peak hours is more expensive
+- Water delivered when temperature exceeds a threshold is more expensive
+• Define thresholds/triggers to respond to the sensor data and the analytics
+- When to water the lawn
+- When to activate the clothes washer, dishwasher, etc.
+• Build a (dashboard?) application to allow the home owner to interact with the data
+- See what is going on – real time and historical
+- Establish thresholds/triggers/actions to activate lawn sprinklers, washing machine, dishwashers, fill swimming pool, etc.
+• Incorporate the Cloud (city level) data to provide comparisons between local house and the entire city
+</p>
+
+
+<p><b>H03.</b> 
+• Work with the Cloud data and correlate the temperature and water consumption data for the city
+• Determine some capacity and cost valuations for water resources (examples)
+- How much water can the system deliver?
+- Potable water could be more expensive than non-potable water. Some ways to analyze the data with these variations.
+• Establish real world scenario around this data (examples)
+- Which neighborhoods/homes use the most water?
+- Relationships between temperature and water consumption
+- Forecasting future water usage based on previous water usage and temperature data
+- Forecasting infrastructure enhancements in water delivery system to be able to
+• This approach involves creative analytics on the data and developing ways to present it.
+</p>
+<p><b>H04.</b>
+• Scenario involves weather forecasting
+- Uses barometer, temperature and humidity sensors on iOS and Android devices
+• Develop application to display this data on the mobile device
+• Upload data to the “Cloud” database
+- Historical sensor data can be generated
+- We can locate a real weather dataset to be used for historical data
+• Develop some strategy to correlate the data and a mechanism to present it. 
+</p>
+<p><b>H05.</b>
+• Scenario involves a home security system
+• Virtual sensors generating data for:
+- Doors and windows opening and closing
+- Lights on and off
+- Smoke alarm on and off
+- More ….
+• Virtual sensors upload data to the home “gateway” database
+• Develop (mobile?) application to display to view the status of the home and to (virtually) interact with various components: (examples)
+- Arm and disarm the security system
+- Turn on/off the lights
+- Turn off the lawn sprinklers
+- Develop some other views of the data and a mechanism to present it
+</p>
+<p><b>H06.</b>
+• Scenario involves a parking garage assigning parking spaces
+• Each parking space is instrumented, for example:
+- Occupied/empty
+- Time of event
+• Each car could have some identifier (RFID?)
+• Virtual arrival and departure of cars at various times
+• Some percentage of cars represent short term parkers (shoppers) vs. some are long term parkers (workers)
+- Program assigns parking spots
+• Virtual sensors upload data to the garage “gateway” database
+• Mobile program for driver to view parking garage, parking space assignment and fee for parking
+• Administration program viewing all the parking assignments and billing
+• “Cloud” database would represent consolidated view of all of the parking garages in the city
+• Cloud database would help city planners:
+- Capacity planning – are there enough parking spaces?
+- How many cars are turned away?
+- Billing strategy – higher charges for peak hours?
+• This approach involves creative analytics on the data and developing ways to present it.
+</p>
+<p><b>H07.</b>
+• Scenario involves a delivery company truck fleet maintenance
+• Each truck is instrumented, for example:
+- Mileage
+- Weight
+- Fuel level
+- Tire pressure
+- Time
+- Driver
+• Virtual truck assignments at various times
+- Various distances and weights
+• Virtual sensors upload each trip’s data to the trucking company’s “gateway” database
+• Gateway database also maintains (examples)
+- Which trucks are in service?
+- Service intervals
+- Fuel usage
+- Tire replacement
+- Driver information (how many hours driven and using which trucks)
+• Mobile program for driver to view current status and maintenance history of current truck
+• Administration program viewing status for all the trucks
+- Which trucks are not available because they are in the shop?
+</p>
+<p><b>H08.</b> 
+• Scenario involves a health care monitoring device which reads (for example)
+- Heart rate
+- Blood pressure
+- Respiration
+- Oxygen levels
+• Virtual sensors upload data to the hospital floor’s “gateway” database
+• Data for some of these sensors should be arriving each second 
+• Need to respond to urgent situations (heart rate = 0) in real time
+• Dashboard type program to allow monitoring of each patient from central location
+- Mechanism to establish individual alert thresholds for each patient
+- View historical data as well as current data.
+
+</p>
+
+      </article>
+  </div>
+</main>
+<style type="text/css">
+	@import url("https://fonts.googleapis.com/css?family=Droid+Serif:700|Lato");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+article {
+  margin: 2em 0;
+  max-width: 960px;
+  width: 80%;
+}
+article h2 {
+  font-family: 'Droid Serif', serif;
+  font-size: 2.5em;
+  line-height: 1.5em;
+}
+article p {
+  initial-letter: 2;
+  line-height: 2em;
+  margin-top: 1em;
+  text-indent: 2em;
+}
+
+body {
+  background-color: snow;
+  color: #2c3e50;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.5em;
+}
+
+nav {
+  align-items: center;
+  background-color:  #ff6600;
+  border-bottom: 2px solid #9E579D;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 73px;
+}
+
+ul {
+  color: #9E579D;
+  display: flex;
+  font-size: .8em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+ul li {
+  cursor: pointer;
+  margin-right: 2em;
+  transition: color .5s ease;
+}
+ul li:hover {
+  color: #574B90;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.img {
+  background: url(https://upload.wikimedia.org/wikipedia/en/2/26/Rajalakshmi_Institute_Of_Technology_%28RIT%29_Logo.jpg);
+  margin-top: 1em;
+  width: 483px;
+  height: 300px;
+}
+
+.logo {
+  background: url(http://www.ritchennai.org/image/logo.png);
+  background-size: contain;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-left: 2em;
+  transition: background .5s ease;
+  width: 70px;
+  height: 70px;
+}
+.logo:hover {
+  background: #9E579D;
+}
+
+.menu-icon {
+  color: #9E579D;
+  cursor: pointer;
+  display: none;
+  font-size: 3em;
+  margin-right: .75em;
+  transition: color .5s ease;
+}
+.menu-icon:hover {
+  color: #574B90;
+}
+
+.float-left {
+  float: left;
+  margin-right: 1em;
+}
+
+.float-right {
+  float: right;
+  margin-left: 1em;
+}
+
+.wrapper {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 93.75px;
+}
+
+
+
+</style>
